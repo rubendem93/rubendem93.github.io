@@ -129,7 +129,8 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-		$(window).scroll(function() {
+// Sticky Header
+$(window).scroll(function() {
 
     if ($(window).scrollTop() > 100) {
         $('.main_h').addClass('sticky');
