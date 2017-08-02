@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Contact</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="Style/Style.css">
+<link rel="stylesheet" href="Style/Navigatie.css">
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+<script src="https://use.fontawesome.com/c7b68af0c9.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="Style/Navigatie.js"></script>
+</head>
+
+<body>
+  
+<header class="main_h">
+
+    <div class="row">
+        <a class="logo" href="Index.html">Ruben</a>
+
+        <div class="mobile-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="Over_mij.html">Over mij</a></li>
+                <li><a href="Mijn_werk.html">Werk</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+    </div> <!-- / row -->
+
+</header>
+
+<div class="titelheader">
+
+    <h1>Ruben De Mesmaeker<span><br>contact</span></h1>
+
+</div>
+
+<div class="row">
+   <div class="col-xs-12 col-sm-6 gegevens">
+	   <span class="naam">Ruben De Mesmaeker</span>
+	   <br>
+   	<i class="fa fa-home" aria-hidden="true"></i>&emsp;Burgemeester Danneelstraat 47<br>
+   	&emsp;&emsp;8500 Kortrijk<br>
+   	<i class="fa fa-phone" aria-hidden="true"></i>&emsp;0485 72 89 32<br>
+   	<i class="fa fa-envelope" aria-hidden="true"></i>&emsp;rubendemesmaeker@hotmail.com<br>
+   		<a href="Style/Images/Curriculum_vitae.pdf" class="link">
+   	<i class="fa fa-arrow-down" aria-hidden="true"></i>&emsp;Mijn Curriculum Vitae
+			</a>
+	</div>
+	</div>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="row">
+	<div class="col-xs-12 socialmedia">
+		<a href="https://www.facebook.com/ruben.demesmaeker.3" class="link" target="_blank">
+			<span class="contacticons"><i class="fa fa-facebook" aria-hidden="true"></i></span>
+		</a>
+		<a href="https://www.instagram.com/demesmaekerruben/?hl=nl" class="link" target="_blank">
+			<span class="contacticons"><i class="fa fa-instagram contacticons" aria-hidden="true"></i></span>
+		</a>
+	</div>
+	</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="footer">
+	<div class="row">
+		<div class="col-xs-12">
+			&copy; Ruben De Mesmaeker 2017
+		</div>
+	</div>
+</div>
+	</body>
+	<script>
+		$('.mobile-toggle').click(function() {
+    if ($('.main_h').hasClass('open-nav')) {
+        $('.main_h').removeClass('open-nav');
+    } else {
+        $('.main_h').addClass('open-nav');
+    }
+});
+
+$('.main_h li a').click(function() {
+    if ($('.main_h').hasClass('open-nav')) {
+        $('.navigation').removeClass('open-nav');
+        $('.main_h').removeClass('open-nav');
+    }
+});
+
+// Navigation Scroll - ljepo radi materem
+$('nav a').click(function(event) {
+    var id = $(this).attr("href");
+    var offset = 70;
+    var target = $(id).offset().top - offset;
+    $('html, body').animate({
+        scrollTop: target
+    }, 500);
+    event.preventDefault();
+});
+	</script>
+</html>
