@@ -1,4 +1,4 @@
-// Sticky Header
+<!--Einde slideshow--><!--Einde slideshow--><!--Einde slideshow--><!--Einde slideshow--><!--Einde slideshow--><!--Einde slideshow--><!--Einde slideshow--><!--Einde slideshow--><!--Einde slideshow--><!--Einde slideshow--><!--Einde slideshow--><!--Einde slideshow-->// Sticky Header
 $(window).scroll(function() {
 
     if ($(window).scrollTop() > 100) {
